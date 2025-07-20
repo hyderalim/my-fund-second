@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Make an impact with every donation. Help fund education, health, and relief efforts for those in need. Donate online safely and change live">
+    <title>Receive Payments on Time</title>
+    <link rel="icon" href="Images/fav.jpg">
+    <link rel="apple-touch-icon" href="Images/fav.jpg"/>
+    <link rel="preload" href="Images/payments.png" as="image" />
+    <link rel="preload" href="Images/logo.png" as="image" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="page-content my-5">
+        <div class="row">
+          <div class="col-12 col-md-6">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Qurbani
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <div class="qurbani d-flex justify-content-between align-items-center mb-3 border p-3 rounded hover-border">
+                      <div class="w-50">
+                        <h4 class="text-start">Qurbani</h4>
+                        <input type="radio" class="btn-check" name="qurbani" id="qurbani-monthly" autocomplete="off"/>
+                        <label class="btn btn-outline-secondary"for="qurbani-monthly">Monthly</label>
+                        <input type="radio" class="btn-check" name="qurbani" id="qurbani-one-off" autocomplete="off"/>
+                        <label class="btn btn-outline-secondary" for="qurbani-one-off" >One-off</label>
+                      </div>
+                      <div class="d-flex align-items-center gap-4">
+                        <div>
+                          <span class="fs-6 fw-semi-bold">1.00 €</span>
+                        </div>
+                        <div
+                          class="d-flex justify-content-center align-items-center"
+                        >
+                          <div class="input-group increment-decrement">
+                            <button class="btn btn-secondary" type="button" id="decrease">
+                              -
+                            </button>
+                            <input type="number" class="form-control text-center" value="1" id="qurbani-counterInput"/>
+                            <button class="btn btn-secondary" type="button" id="increase">
+                              +
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="watches d-flex justify-content-between align-items-center mb-3 border p-3 rounded hover-border">
+                      <div class="w-50">
+                        <h4 class="text-start">Watches</h4>
+                        <div class="dropdown-wrapper position-relative w-75">
+                          <select class="form-select custom-select-arrow" aria-label="Default select example" id="watches-select">
+                            <option selected>Select Type</option>
+                            <option value="1">
+                              Wajib Qurban (Eid-ul Adha)
+                            </option>
+                            <option value="2">Aqiqa Qurban</option>
+                            <option value="3">Adaq (Nezr) Qurban</option>
+                            <option value="3">Sadaqah Qurban</option>
+                            <option value="3">Shifa Qurban</option>
+                          </select>
+                          <div class="custom-arrow-button">▼</div>
+                        </div>
+                      </div>
+                      <div class="d-flex align-items-center gap-4">
+                        <div>
+                          <span class="fs-6 fw-semi-bold">166.00 € </span>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center">
+                          <div class="input-group increment-decrement">
+                            <button class="btn btn-secondary" type="button" id="decrease">
+                              -
+                            </button>
+                            <input type="number" class="form-control text-center" value="1" id="watches-counterInput"/>
+                            <button class="btn btn-secondary" type="button" id="increase">
+                              +
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="border p-3 rounded hover-border">
+                        <div class="hifayath d-flex justify-content-between align-items-center">
+                          <div class="w-50">
+                            <h4 class="text-start">hifayath</h4>
+                            <div class="d-flex flex-column gap-2">
+                              <div class="dropdown-wrapper position-relative w-75">
+                                <select class="form-select custom-select-arrow" aria-label="Default select example" id="hifayath-select">
+                                  <option selected>Select Type</option>
+                                  <option value="1">Wajib Qurban (Eid-ul Adha)</option>
+                                  <option value="2">Aqiqa Qurban</option>
+                                  <option value="3">Adaq (Nezr) Qurban</option>
+                                  <option value="3">Sadaqah Qurban</option>
+                                  <option value="3">Shifa Qurban</option>
+                                </select>
+                                <div class="custom-arrow-button">▼</div>
+                              </div>
+                              <div class="dropdown-wrapper position-relative w-75">
+                                <select class="form-select custom-select-arrow" aria-label="Default select example" id="hifayath-country-select">
+                                  <option selected>Select Country</option>
+                                  <option value="1">Germany</option>
+                                  <option value="2">Anguilla</option>
+                                  <option value="3">Tschad</option>
+                                </select>
+                                <div class="custom-arrow-button">▼</div>
+                              </div>
+                            </div>
+                            <div class="notes my-3">
+                                <button class="btn btn-outline-primary mb-2" id="notes-btn">Enter you notes here</button>
+                            </div>
+                          </div>
+                          <div class="d-flex align-items-center gap-4">
+                            <div>
+                              <span class="fs-6 fw-semi-bold">12.00 € </span>
+                            </div>
+                            <div class="d-flex justify-content-center align-items-center">
+                              <div class="input-group increment-decrement">
+                                <button class="btn btn-secondary" type="button" id="decrease">
+                                  -
+                                </button>
+                                <input type="number" class="form-control text-center" value="1" id="hifayath-counterInput"/>
+                                <button class="btn btn-secondary" type="button" id="increase">
+                                  +
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                         <div class="notes-area">
+                          <textarea class="form-control" id="notes-area" rows="3" placeholder="Enter your notes here..."></textarea>
+                        </div>
+                    </div>
+                    <div class="test-qurbani d-flex justify-content-between align-items-center mb-3 border p-3 rounded hover-border">
+                      <div class="w-50">
+                        <h4 class="text-start">Test-Qurbani</h4>
+                      </div>
+                      <div class="d-flex align-items-center gap-4">
+                        <div>
+                          <span class="fs-6 fw-semi-bold">10.00 €</span>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center">
+                          <div class="input-group increment-decrement">
+                            <button class="btn btn-secondary" type="button" id="decrease">
+                              -
+                            </button>
+                            <input type="number" class="form-control text-center" value="1" id="test-qurbani-counterInput"/>
+                            <button class="btn btn-secondary" type="button" id="increase">
+                              +
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="dalkha d-flex justify-content-between align-items-center mb-3 border p-3 rounded hover-border">
+                      <div class="w-50">
+                        <h4 class="text-start">Dalkha</h4>
+                        <input type="radio" class="btn-check" name="dalkha" id="dalkha-monthly" autocomplete="off"/>
+                        <label class="btn btn-outline-secondary" for="dalkha-monthly">Monthly</label>
+                        <input type="radio" class="btn-check" name="dalkha" id="dalkha-one-off" autocomplete="off"/>
+                        <label class="btn btn-outline-secondary" for="dalkha-one-off">One-off</label>
+                      </div>
+                      <div class="d-flex align-items-center gap-4">
+                        <div>
+                          <span class="fs-6 fw-semi-bold">10.00 €</span>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center">
+                          <div class="input-group increment-decrement">
+                            <button class="btn btn-secondary" type="button" id="decrease">
+                              -
+                            </button>
+                            <input type="number" class="form-control text-center" value="1" id="dalkha-counterInput"/>
+                            <button class="btn btn-secondary" type="button" id="increase">
+                              +
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cause description d-flex justify-content-between align-items-center mb-3 border p-3 rounded hover-border">
+                      <div class="w-50">
+                        <h4 class="text-start">Cause Description</h4>
+                      </div>
+                      <div class="d-flex align-items-center gap-4">
+                        <div>
+                          <span class="fs-6 fw-semi-bold">70.00 €</span>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center">
+                          <div class="input-group increment-decrement">
+                            <button class="btn btn-secondary" type="button" id="decrease">
+                              -
+                            </button>
+                            <input type="number" class="form-control text-center" value="1" id="cause-counterInput"/>
+                            <button class="btn btn-secondary" type="button" id="increase">
+                              +
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="qurbani-2025-lock d-flex justify-content-between align-items-center mb-3 border p-3 rounded hover-border">
+                      <div class="w-50">
+                        <h4 class="text-start">QURBANI-2025-LOCK</h4>
+                        <div class="dropdown-wrapper position-relative w-75">
+                          <select class="form-select custom-select-arrow" aria-label="Default select example" id="qurbani-2025-select">
+                            <option selected>Animal Type</option>
+                            <option value="1">Sheep</option>
+                            <option value="2">Goat</option>
+                            <option value="3">Cow</option>
+                            <option value="3">Camel</option>
+                            <option value="3">Buffalo</option>
+                          </select>
+                          <div class="custom-arrow-button">▼</div>
+                        </div>
+                      </div>
+                      <div class="d-flex align-items-center gap-4">
+                        <div>
+                          <span class="fs-6 fw-semi-bold">20.00 € </span>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center">
+                          <div class="input-group increment-decrement">
+                            <button class="btn btn-secondary" type="button" id="decrease">
+                              -
+                            </button>
+                            <input type="number" class="form-control text-center" value="1" id="qurbani-2025-counterInput"/>
+                            <button class="btn btn-secondary" type="button" id="increase">
+                              +
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="qurbani-animal-type d-flex justify-content-between align-items-center mb-3 border p-3 rounded hover-border">
+                      <div class="w-50">
+                        <h4 class="text-start">QURABNI-ANIMAL-TYPE</h4>
+                        <div class="d-flex flex-column gap-2">
+                          <div class="dropdown-wrapper position-relative w-75">
+                            <select class="form-select custom-select-arrow" aria-label="Default select example" id="qurbani-animal-select">
+                              <option selected>Animal Type</option>
+                              <option value="1">Sheep</option>
+                              <option value="2">Goat</option>
+                              <option value="3">Cow</option>
+                              <option value="3">Camel</option>
+                              <option value="3">Buffalo</option>
+                            </select>
+                            <div class="custom-arrow-button">▼</div>
+                          </div>
+                          <div class="dropdown-wrapper position-relative w-75">
+                            <select class="form-select custom-select-arrow" aria-label="Default select example" id="qurbani-animal-country-select">
+                              <option selected>Select Country</option>
+                              <option value="1">Afghanistan</option>
+                              <option value="2">Albania</option>
+                              <option value="3">Algeria</option>
+                              <option value="4">American Samoa</option>
+                              <option value="5">Andorra</option>
+                              <option value="6">Bermuda</option>
+                              <option value="7">Bhutan</option>
+                              <option value="8">Bosnia and Herzegowina</option>
+                              <option value="9">Colombia</option>
+                              <option value="10">Comoros</option>
+                              <option value="11">Congo</option>
+                            </select>
+                            <div class="custom-arrow-button">▼</div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="d-flex align-items-center gap-4">
+                        <div>
+                          <span class="fs-6 fw-semi-bold">12.00 € </span>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center">
+                          <div class="input-group increment-decrement">
+                            <button class="btn btn-secondary" type="button" id="decrease">
+                              -
+                            </button>
+                            <input type="number" class="form-control text-center" value="1" id="qurbani-animal-counterInput"/>
+                            <button class="btn btn-secondary" type="button" id="increase">
+                              +
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Water-well
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <div class="water-well d-flex justify-content-between align-items-center mb-3 border p-3 rounded hover-border">
+                      <div class="w-50">
+                        <h4 class="text-start">water-well</h4>
+                      </div>
+                      <div class="d-flex align-items-center gap-4">
+                        <div>
+                          <span class="fs-6 fw-semi-bold">10.00 €</span>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center">
+                          <div class="input-group increment-decrement">
+                            <button class="btn btn-secondary" type="button" id="decrease">
+                              -
+                            </button>
+                            <input type="number" class="form-control text-center" value="1" id="water-well-counterInput"/>
+                            <button class="btn btn-secondary" type="button" id="increase">
+                              +
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cfd-causes d-flex justify-content-between align-items-center mb-3 border p-3 rounded hover-border">
+                      <div class="w-50">
+                        <h4 class="text-start">cfd causes</h4>
+                        <input type="radio" class="btn-check" name="cfd-causes" id="cfd-causes-monthly" autocomplete="off"/>
+                        <label class="btn btn-outline-secondary" for="cfd-causes-monthly" >Monthly</label>
+                        <input type="radio" class="btn-check" name="cfd-causes" id="cfd-causes-one-off" autocomplete="off"/>
+                        <label class="btn btn-outline-secondary" for="cfd-causes-one-off" >One-off</label>
+                      </div>
+                      <div class="d-flex align-items-center gap-4">
+                        <div>
+                          <span class="fs-6 fw-semi-bold">123.00 €</span>
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center">
+                          <div class="input-group increment-decrement">
+                            <button class="btn btn-secondary" type="button" id="decrease">
+                              -
+                            </button>
+                            <input type="number" class="form-control text-center" value="1" id="cfd-causes-counterInput"/>
+                            <button class="btn btn-secondary" type="button" id="increase">
+                              +
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="card p-3">
+              <div class="payments-section d-grid">
+                <div class="input-group">
+                  <input type="radio" name="payments" id="paypal" />
+                  <label for="paypal" class="paypal"></label>
+                </div>
+                <div class="input-group">
+                  <input type="radio" name="payments" id="sepa" />
+                  <label for="sepa" class="sepa"></label>
+                </div>
+                <div class="input-group">
+                  <input type="radio" name="payments" id="card-collection" />
+                  <label for="card-collection" class="card-collection"></label>
+                </div>
+                <div class="input-group">
+                  <input type="radio" name="payments" id="ideal" />
+                  <label for="ideal" class="ideal"></label>
+                </div>
+                <div class="input-group">
+                  <input type="radio" name="payments" id="eps" />
+                  <label for="eps" class="eps"></label>
+                </div>
+                <div class="input-group">
+                  <input type="radio" name="payments" id="bancontact" />
+                  <label for="bancontact" class="bancontact"></label>
+                </div>
+                <div class="input-group">
+                  <input type="radio" name="payments" id="alipay" />
+                  <label for="alipay" class="alipay"></label>
+                </div>
+                <div class="input-group">
+                  <input type="radio" name="payments" id="wechat_pay" />
+                  <label for="wechat_pay" class="wechat_pay"></label>
+                </div>
+                <div class="input-group">
+                  <input type="radio" name="payments" id="klarna" />
+                  <label for="klarna" class="klarna"></label>
+                </div>
+                <div class="input-group">
+                  <input type="radio" name="payments" id="stripe" />
+                  <label for="stripe" class="stripe"></label>
+                </div>
+                <div class="input-group">
+                  <input type="radio" name="payments" id="bank-transfer" />
+                  <label for="bank-transfer" class="bank-transfer"></label>
+                </div>
+              </div>
+              <div id="payment-info" class="d-flex justify-content-center align-items-center gap-2 my-4">
+                <span>PAY USING</span>
+                <span class="dynamic"></span>
+              </div>
+              <div class="form-section" id="form-paypal">
+                <form>
+                  <div class="mb-2">
+                    <input type="text" class="form-control" id="paypal-form-name" placeholder="Name*"/>
+                  </div>
+                  <div class="mb-2">
+                    <input type="email" class="form-control" id="paypal-form-email" placeholder="Enter Your Email*"/>
+                  </div>
+                  <div class="mb-2">
+                    <div class="input-group">
+                      <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="countryCodeBtn">
+                        +1
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li>
+                          <a class="dropdown-item" href="#" data-code="+1">United States (+1)</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#" data-code="+44">United Kingdom (+44)</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#" data-code="+91">India (+91)</a>
+                        </li>
+                      </ul>
+                      <input type="text" class="form-control" id="paypal-form-phone" placeholder="Phone number"/>
+                    </div>
+                  </div>
+                  <div class="mb-2">
+                    <input type="text" class="form-control" id="paypal-form-address1" placeholder="Address Line 1"/>
+                  </div>
+                  <div class="mb-2">
+                    <input type="text" class="form-control" id="paypal-form-address2" placeholder="Address Line 2"/>
+                  </div>
+                  <div class="mb-2 row w-100 mx-auto">
+                    <div class="col-md-6 px-0">
+                      <input type="text" class="form-control" id="paypal-form-city" placeholder="City"/>
+                    </div>
+                    <div class="col-md-6 px-0">
+                      <input type="text" class="form-control" id="paypal-form-postalcode" placeholder="Postal Code"/>
+                    </div>
+                  </div>
+                  <div class="mb-2">
+                    <input type="text" class="form-control" id="paypal-form-country" placeholder="Country"/>
+                  </div>
+                  <div class="my-3 form-check">
+                    <label class="form-check-label d-flex align-items-center" for="giftaid">
+                      <input type="checkbox" class="form-check-input" id="giftaid"/>
+                      <div class="d-flex gap-2 align-items-center">
+                        <img src="Image/giftaid.gif" alt="gift aid" class="img-fluid object-fit-contain"/>
+                        <div class="d-flex flex-column" style="color: #f58220">
+                          <h2>25% Extra Free</h2>
+                          <p class="fs-6 fw-bold">
+                            Increase the value of your donation by 25%
+                          </p>
+                        </div>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="acceptance"/>
+                    <label class="form-check-label" for="acceptance">I (the donor) hereby accept the costs of the transaction,so that TEST-ACCOUNT will not be charged.</label>
+                  </div>
+                  <button type="submit" class="btn btn-secondary d-flex justify-content-center mx-auto py-3">
+                    Confirm your donation (€0.00)
+                  </button>
+                </form>
+              </div>
+              <div class="secure d-flex flex-column justify-content-center align-items-center my-3">
+                <img src="Image/secure.png" alt="secure payment" class="img-fluid w-25 mx-auto"/>
+                <p class="fs-6">
+                  All data is transmitted securely with SSL encryption
+                </p>
+              </div>
+              <div class="logo-image d-flex justify-content-center align-items-center my-3">
+                <img src="Image/logo.png" alt="Logo image" class="img-fluid" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
