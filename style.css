@@ -1,0 +1,110 @@
+.payments-section{
+    grid-template-columns: repeat(5, 1fr);
+}
+.payments-section input{
+    display: none;
+}
+
+.payments-section label{
+    background-image: url('Image/payments.png');
+    width: 74px;
+    height: 74px;
+    background-position: 0% 0%;
+}
+.payments-section .paypal{
+    background-position: 0% 0%;
+}
+.payments-section .sepa{
+    background-position: 25% 0%;
+}
+.payments-section .card-collection{
+    background-position: 50% 0%;
+}
+.payments-section .ideal{
+    background-position: 74% 0%;
+}
+.payments-section .eps{
+    background-position: 100% 0%;
+}
+.payments-section .bancontact{
+    background-position: 0% 50%;
+}
+.payments-section .alipay{
+    background-position: 25% 50%;
+}
+.payments-section .wechat_pay{
+    background-position: 50% 50%;
+}
+.payments-section .klarna{
+    background-position: 74% 50%;
+}
+.payments-section .stripe{
+    background-position: 100% 50%;
+}
+.payments-section .bank-transfer{
+    background-position: 0% 100%;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+.hover-border{
+ transition : all 0.5s linear;
+}
+.hover-border:hover {
+  border-color: #0d6efd;
+  box-shadow: 0 0 10px rgba(13, 110, 253, 0.4);
+ 
+}
+.dropdown-wrapper {
+  display: inline-block;
+  position: relative;
+  width: 250px; 
+}
+
+.custom-select-arrow {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-right: 2.5rem; 
+}
+
+.custom-arrow-button {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    right: 0;
+    background-color: #6c757d;
+    color: white;
+    padding: 0.3rem 0.6rem;
+    border-radius: 0.25rem;
+    pointer-events: none;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+}
+.increment-decrement{
+    width: 120px;
+}
+
+@media (max-width: 768px) {
+ .accordion-body{
+    padding:0!important; 
+}
+.row>*{
+    padding:0!important;
+
+}
+h4{
+    font-size: 16px !important;
+}
+.increment-decrement{
+    width: 100px;
+}
+}
