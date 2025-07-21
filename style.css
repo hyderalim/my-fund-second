@@ -96,6 +96,7 @@ input[type="number"] {
     width: 120px;
 }
 
+
 @media (max-width: 768px) {
  .accordion-body{
     padding:0!important; 
