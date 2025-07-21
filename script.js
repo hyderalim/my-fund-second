@@ -27,16 +27,26 @@ document.querySelector('.payments-section').addEventListener('change', (event)=>
     });
   });
 
-  const notesBtn = document.getElementById('notes-btn');
-  const notesArea = document.getElementById('notes-area');
+const notesBtn = document.getElementById('notes-btn');
+const notesAreaWrapper = document.querySelector('.notes-area');
+const notesSave = document.getElementById('notes-save');
+const notesCancel = document.getElementById('notes-cancel');
 
-  notesBtn.addEventListener('click', () => {
-    notesArea.classList.toggle('d-none');   
-  });
+notesBtn.addEventListener('click', () => {
+  notesAreaWrapper.classList.remove('d-none');
+});
+
+notesSave.addEventListener('click', () => {
+  notesAreaWrapper.classList.add('d-none');
+});
+
+notesCancel.addEventListener('click', () => {
+  notesAreaWrapper.classList.add('d-none');
+});
+
     const collapseTwo = document.getElementById('collapseTwo');
 
-    collapseTwo.addEventListener('shown.bs.collapse', function () {
-      // Scroll the window to the top of the accordion item smoothly
+    collapseTwo.addEventListener('shown.bs.collapse', function () {     
       const header = document.getElementById('headingTwo');
       header.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });

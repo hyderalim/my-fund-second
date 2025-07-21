@@ -1,3 +1,6 @@
+body {
+font-family: 'Roboto', sans-serif;
+}
 .payments-section{
     grid-template-columns: repeat(5, 1fr);
 }
@@ -106,5 +109,8 @@ h4{
 }
 .increment-decrement{
     width: 100px;
+}
+.payments-section{
+    grid-template-columns: repeat(4, 1fr);
 }
 }
